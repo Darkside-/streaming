@@ -1,0 +1,31 @@
+#output .anim {
+  animation: fadein 10s;
+  -moz-animation: fadein 10s; /* Firefox */
+  -webkit-animation: fadein 10s; /* Safari and Chrome */
+  -o-animation: fadein 10s; /* Opera */
+  font-weight: strong;
+  font-size: 14pt;
+  width: 300px;
+  background: linear-gradient(0deg,#d35400, #ea5d00 50%);
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  line-height: 32px;
+  vertical-align: center;
+  padding-left: 10px;
+  opacity: 0;
+}
+
+#output .floatRight {
+    float: right;
+    padding-right: 10px;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}

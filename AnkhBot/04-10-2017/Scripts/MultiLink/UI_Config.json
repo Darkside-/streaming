@@ -1,0 +1,76 @@
+﻿{
+    "output_file": "settings.json",
+
+    "saveMulti": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Save Multi",
+        "tooltip": "Save the multi on bot reset. If Disabled multi will revert back to No Multi.",
+        "group": "General"
+    },
+
+    "commandCooldown": {
+        "type": "numberbox",
+        "value": 10,
+        "label": "Command Cooldown",
+        "tooltip": "Cooldown amount before command can be used again.",
+        "group": "General"
+    },
+
+    "helpMessage": {
+        "type": "button",
+        "label": "Click Here For Instructions",
+        "tooltip": "Opens Window with instructions for Multi.",
+        "function": "helpMessageBox",
+        "wsevent": "",
+        "group": "General"
+    },
+
+    "modCanChangeMessage": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Mod Access",
+        "tooltip": "Allow mods to change custom message from chat.",
+        "group": "Response Message"
+    },
+
+    "customMessage": {
+        "type": "textbox",
+        "value": "Watch everyone together here:",
+        "label": "Custom Message",
+        "tooltip": "Custom Message to go before multi link.",
+        "group": "Response Message"
+    },
+
+    "timerEnabled": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Enable Timer",
+        "tooltip": "Enable timer to post multi in chat at set interval.",
+        "group": "Timer"
+    },
+
+    "modCanChangeTimer": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Mod Access",
+        "tooltip": "Allow mods to enable/disable timer.",
+        "group": "Timer"
+    },
+
+    "timerLength": {
+        "type": "numberbox",
+        "value": 10,
+        "label": "Timer Length (Minutes)",
+        "tooltip": "Amount of time between timer posts in minutes.",
+        "group": "Timer"
+    },
+
+    "timerChatters": {
+        "type": "numberbox",
+        "value": 10,
+        "label": "Chatter Number",
+        "tooltip": "Amount of posts in chat before timer is posted.",
+        "group": "Timer"
+    }
+}

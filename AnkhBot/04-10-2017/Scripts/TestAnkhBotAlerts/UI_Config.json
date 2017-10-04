@@ -1,0 +1,144 @@
+﻿{
+	"output_file": "TestAlertsSettings.json",
+	"display_name": {
+		"type": "textbox",
+		"value": "SomeTwitchName",
+		"label": "Twitch Display Name",
+		"tooltip": "Capitalization of the Twitch username.\r\nTwitch usernames are between 4 and 25 characters long.",
+		"group": ""	
+	},	
+	"follow_button": {
+		"type": "button",
+		"label": "Trigger Follow Alert",
+		"tooltip": "Trigger the follow alert.",
+		"function": "TriggerFollowAlert",
+		"wsevent": "",
+		"group": "Follow Alert"
+	},
+	"host_amount_viewers": {
+		"type": "numberbox",
+		"label": "Viewer Amount",
+		"value": 15,
+		"tooltip": "Amount of viewers hosted for by user.",
+		"group": "Host Alert"
+	},
+	"host_button": {
+		"type": "button",
+		"label": "Trigger Host Alert",
+		"tooltip": "Trigger the host alert.",
+		"function": "TriggerHostAlert",
+		"wsevent": "",
+		"group": "Host Alert"
+	},
+	"cheer_amount_bits": {
+		"type": "numberbox",
+		"label": "Amount Of Bits Cheered",
+		"value": 150,
+		"tooltip": "Number of bits used by user.",
+		"group": "Cheer Alert"
+	},
+	"cheer_total_bits": {
+		"type": "numberbox",
+		"label": "Total Amount of Bits Cheered",
+		"value": 1200,
+		"tooltip": "All-time total number of bits used by the user.",
+		"group": "Cheer Alert"
+	},
+	"cheer_message": {
+		"type": "textbox",
+		"value": "cheer50 You are such a pleb! cheer100" ,
+		"label": "Cheer Message",
+		"tooltip": "Chat message sent with the cheer.",
+		"group": "Cheer Alert"	
+	},	
+	"cheer_button": {
+		"type": "button",
+		"label": "Trigger Cheer Alert",
+		"tooltip": "Trigger the cheer alert.",
+		"function": "TriggerCheerAlert",
+		"wsevent": "",
+		"group": "Cheer Alert"
+	},
+	"tsub_tier": {
+		"type": "dropdown",
+		"label": "Twitch Subscription Tier",
+		"value": "1000",
+		"tooltip": "Tier of the Twitch subscription;\r\n[prime] is prime sub\r\n[1000] is $5 tier\r\n[2000] is $10 tier\r\n[3000] is $25 tier",
+		"items": ["prime", "1000", "2000", "3000"],
+		"group": "Twitch Subscription Alert"
+	},
+	"tsub_months": {
+		"type": "numberbox",
+		"label": "Months",
+		"value": 1,
+		"tooltip": "Total months of the Twitch subscription.\r\nThis value cannot be lower than 1.",
+		"group": "Twitch Subscription Alert"
+	},
+	"tsub_message": {
+		"type": "textbox",
+		"value": "I subbed like a boss!" ,
+		"label": "Subscription Message",
+		"tooltip": "Chat message send with the (re)subscription.",
+		"group": "Twitch Subscription Alert"	
+	},
+	"tsub_button": {
+		"type": "button",
+		"label": "Trigger Twitch Subscription Alert",
+		"tooltip": "Trigger the Twitch subscription alert.",
+		"function": "TriggerTwitchSubAlert",
+		"wsevent": "",
+		"group": "Twitch Subscription Alert"
+	},
+	"gsub_tier": {
+		"type": "numberbox",
+		"label": "GameWisp Subscription Tier",
+		"value": 1,
+		"tooltip": "Tier of the GameWisp subscription.\r\nCannot be lower than 1 in value.",
+		"group": "GameWisp Subscription Alert"
+	},
+	"gsub_months": {
+		"type": "numberbox",
+		"label": "Months",
+		"value": 1,
+		"tooltip": "Total months of the GameWisp subscription.\r\nThis value cannot be lower than 1.",
+		"group": "GameWisp Subscription Alert"
+	},
+	"gsub_button": {
+		"type": "button",
+		"label": "Trigger GameWisp Subscription Alert",
+		"tooltip": "Trigger the GameWisp subscription alert.",
+		"function": "TriggerGameWispSubAlert",
+		"wsevent": "",
+		"group": "GameWisp Subscription Alert"
+	},
+	"donation_amount": {
+		"type": "textbox",
+		"value": "10" ,
+		"label": "Donation Amount",
+		"tooltip": "Amount that has been donated by the user.\r\nWarning: Send as string to receiving ws client!",
+		"group": "Donation Alert"	
+	},
+	"donation_currency": {
+		"type": "dropdown",
+		"label": "Currecny Type",
+		"value": "USD",
+		"tooltip": "ISO 4217 Currency Code.",
+		"items": ["AED","AFN","ALL","AMD","ANG","AOA","ARS","AUD","AWG","AZN","BAM","BBD","BDT","BGN","BHD","BIF","BMD","BND","BOB","BRL","BSD","BTN","BWP","BYN","BZD","CAD","CDF","CHF","CLP","CNY","COP","CRC","CUC","CUP","CVE","CZK","DJF","DKK","DOP","DZD","EGP","ERN","ETB","EUR","FJD","FKP","GBP","GEL","GGP","GHS","GIP","GMD","GNF","GTQ","GYD","HKD","HNL","HRK","HTG","HUF","IDR","ILS","IMP","INR","IQD","IRR","ISK","JEP","JMD","JOD","JPY","KES","KGS","KHR","KMF","KPW","KRW","KWD","KYD","KZT","LAK","LBP","LKR","LRD","LSL","LYD","MAD","MDL","MGA","MKD","MMK","MNT","MOP","MRO","MUR","MVR","MWK","MXN","MYR","MZN","NAD","NGN","NIO","NOK","NPR","NZD","OMR","PAB","PEN","PGK","PHP","PKR","PLN","PYG","QAR","RON","RSD","RUB","RWF","SAR","SBD","SCR","SDG","SEK","SGD","SHP","SLL","SOS","SPL","SRD","STD","SVC","SYP","SZL","THB","TJS","TMT","TND","TOP","TRY","TTD","TVD","TWD","TZS","UAH","UGX","USD","UYU","UZS","VEF","VND","VUV","WST","XAF","XCD","XDR","XOF","XPF","YER","ZAR","ZMW","ZWD"],
+		"group": "Donation Alert"
+	},
+	"donation_message": {
+		"type": "textbox",
+		"value": "Take muh money!" ,
+		"label": "Donation Message",
+		"tooltip": "Message send with the donation.",
+		"group": "Donation Alert"	
+	},
+	"donation_button": {
+		"type": "button",
+		"label": "Trigger Donation Alert",
+		"tooltip": "Trigger the donation alert.",
+		"function": "TriggerDonationAlert",
+		"wsevent": "",
+		"group": "Donation Alert"
+	}
+}

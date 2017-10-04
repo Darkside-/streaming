@@ -1,0 +1,257 @@
+body{
+  /* [GLOBAL FONT] */
+  font-family: sans-serif;
+
+  /* [GLOBAL MARGIN] */
+  margin: 0px;
+  overflow-x: hidden;
+}
+#body{
+  opacity: 0;
+}
+/* -------------------------------------------
+/*  HEADER
+/*---------------------------------------------*/
+.header{
+  /*[BACKGROUND STYLE] Change values here to adjust the header*/
+  background-color: #1e1e1e;
+  box-shadow: 0px 2px 10px #1e1e1e;
+  width: auto;
+
+  /*[TEXT]*/
+  font-size: 20pt;
+  color: #d6d6d6;
+  
+  /*[ALIGNMENT]*/
+  padding: 10px 20px;
+  overflow: auto;
+}
+.header > p {
+  height: auto;
+  display: block;
+}
+#bettingOn{
+  width: 75%;
+  float: left;
+}
+/* -------------------------------------------
+/*  HEADER POLL INFO
+/*---------------------------------------------*/
+.pollInfo{
+  float: right;
+  margin-top: 15px;
+  width: auto;
+}
+.pollInfo > *:not(:last-child) {
+    margin-right: 20px;
+}
+#timeLeft, #totalBets, #min, #max,#payout,#multibet{
+  /*[TEXT]*/
+  text-align: center;
+  font-size: 9pt;
+  font-weight: bold!important;
+
+  /*[ALIGNMENT]*/
+  display: inline-block;
+}
+
+#timeLeft > span, #totalBets > span, #min > span,#max > span,#payout > span,#multibet > span{
+  display: block;
+  font-size: 20pt!important;
+  font-weight: normal!important;
+}
+
+.optionContainer{
+ padding: 0px 10px;
+}
+.optionContainer:last-child{
+ padding-bottom: 10px;
+}
+.option{
+  /*[TEXT] Change the font style here*/ 
+  color: #1e1e1e;
+  font-size: 12pt;
+  font-weight: bold;
+
+  /*[SPACING] Change the values here to adjust the spacing between options */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.bets{
+  /*[BAR BACKGROUND] Change the color here of the empty Bar */
+	background: #555;
+
+  /*[BAR BORDER] Change the values here to adjust the border style */
+  border-color: #1e1e1e;
+	border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+.bets > span {
+  /*[TEXT] Change values regarding the display of Text*/
+  display: block;
+  line-height: 28px;
+  text-align: center;
+  color: #d6d6d6;
+  font-weight: bold;
+  text-shadow: -.6px -.6px 0 #000,
+                .6px -.6px 0 #000,
+                -.6px .6px 0 #000,
+                .6px .6px 0 #000; 
+
+  /*[BAR BORDER] Change settings here in regards to the bar border*/
+  border-radius: inherit;
+  
+  /*[BAR COLOR] Change the hex values here to swap the bar color*/
+  background: #e67e22; /* Old browsers */
+  background: -moz-linear-gradient(top, #e67e22 0%, #d35400 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e67e22 0%,#d35400 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e67e22 0%,#d35400 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67e22', endColorstr='#d35400',GradientType=0 ); /* IE6-9 */
+}
+.betBase {
+  /*[BAR STYLE] */
+  background: #e67e22; /* Old browsers */
+  background: -moz-linear-gradient(top, #e67e22 0%, #d35400 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e67e22 0%,#d35400 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e67e22 0%,#d35400 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67e22', endColorstr='#d35400',GradientType=0 ); /* IE6-9 */
+
+  /*[BORDER]*/
+  border: 1px solid black;
+  border-radius: 5px;
+
+  /*[TEXT]*/
+  color: white;
+  line-height: 28px;
+  width: auto;
+
+  /*[ALIGNMENT]*/
+  margin-top: 4px;
+  margin-bottom: 4px;
+  vertical-align: center;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  /*[ALIGNMENT]*/
+  text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+  opacity: 0;
+}
+
+.floatRight {
+    float: right;
+    padding-right: 10px;
+}
+#optionsOutput{
+  width: 75%;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 0 6px #1e1e1e;
+  background-color: #eaf0f0;
+}
+#outputArea{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#betsOutput{
+  width: 22.5%;
+  float: right;
+  margin-top: 20px;
+  box-shadow: 0 0 6px #1e1e1e;
+  background-color: #eaf0f0;
+}
+#betsOutput:first-child{
+  margin-top: 32px;
+  
+}
+
+#winning {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 24pt;
+  text-align: center;
+  opacity: 0;
+}
+
+
+#entriesTitle, #optionsTitle{
+  width: 100%;
+  font-size: 20pt;
+  line-height: 32pt;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #d6d6d6;
+}
+
+/*entriesTitle{
+  margin-bottom: 32px;
+}*/
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+  /*.header{
+    height:auto;
+  }*/
+	#bettingOn {
+		width: 100%;
+    float: none;
+	}
+	.pollInfo {
+		width: auto;
+		float: none;
+	}
+}
+@media screen and (max-width: 700px) {
+  /*.header{
+    height:auto;
+  }*/
+	#bettingOn {
+		width: 100%;
+    float: none;
+	}
+	.pollInfo {
+		width: auto;
+		float: none;
+	}
+
+  #optionsOutput {
+		width: 50%;
+    float: none;
+	}
+
+	#betsOutput {
+		width: 47.5%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  /*.header{
+    height:auto;
+  }*/
+	#bettingOn {
+		width: 100%;
+    float: none;
+	}
+	.pollInfo {
+		width: auto;
+		float: none;
+	}
+  
+  #optionsOutput {
+		width: 100%;
+    float: none;
+	}
+
+	#betsOutput {
+		width: auto;
+		float: none;
+	}
+}

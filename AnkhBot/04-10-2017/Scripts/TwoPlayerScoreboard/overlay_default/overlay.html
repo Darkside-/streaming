@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+			<meta charset="UTF-8">
+			<title>Scoreboard Overlay</title>
+			<link rel="stylesheet" type="text/css" href="styles.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="script.js"></script>
+			<script src="../API_Key.js"></script>
+			<script src="../ScoreboardSettings.js"></script>			
+	</head>
+	<body>
+			<div id="scoreboard" class="hidden">
+				
+				<div id="left-info-container" class="info-container">
+					<div id="p1name" class="name"></div> 
+					<div id="p1score" class="score"></div>					
+				</div>
+				
+				<div id="seperator" class="">&#x2694;</div>
+				
+				<div id="right-info-container" class="info-container">
+					<div id="p2name" class="name"></div>
+					<div id="p2score" class="score"></div>
+				</div>
+				
+			</div>
+			
+			<canvas id="measurecanvas"></canvas>
+			
+	</body>
+</html>

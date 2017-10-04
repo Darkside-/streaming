@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Poll Overlay</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="API_Key.js"></script>
+    <script src="userVote.js"></script>
+    <script src="voteOption.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body id="body">
+<div class="header">
+    <div id="votingOn">
+        <p></p>
+    </div>
+    <div class="pollInfo">
+        <p id="cost"><span>0</span>COST</p>
+        <p id="totalVotes"><span>0</span>VOTES</p>
+        <p id="timeLeft"><span>00:00</span>TIME LEFT</p>
+    </div>    
+</div>
+<div id="outputArea">
+    <div id="optionsOutput">
+        <div id="winning" hidden>Winning Option</div>
+        <div id="optionsTitle">Options</div>
+    </div>
+    <div id="votesOutput">
+        <div id="entriesTitle">Entries</div>
+    </div>
+</div>
+<script src="client.js"></script>
+</body>
+
+</html>

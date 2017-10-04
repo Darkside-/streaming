@@ -1,0 +1,32 @@
+﻿{
+	"output_file": "NSASettings.json",
+	"MessageViewerRequester": {
+		"type": "textbox",
+		"value": "Now playing: {0} - Requested by {1}" ,
+		"label": "Viewer Request",
+		"tooltip": "The chat message to be written on a new song playing requested by a viewer. Leave empty to have no chat response.\r\n\r\n{0} is the song name.\r\n{1} is the requester of the song.",
+		"group": "Chat Messages"	
+	},
+	"MessageCasterRequester": {
+		"type": "textbox",
+		"value": "Now playing: {0}" ,
+		"label": "Caster Request / Spotify Mode",
+		"tooltip": "The chat message to be written on a new song playing requested by the caster, or when playing song in 'Spotify' mode. Leave empty to have no chat response.\r\n\r\n{0} is the song name.\r\n{1} is the requester of the song.",
+		"group": "Chat Messages"	
+	},
+	"FileCheck": {
+		"type": "numberbox",
+		"label": "Check Song File Every x Seconds",
+		"value": 5,
+		"tooltip": "The amount of seconds between checking the CurrentSong.txt file. Bigger eases the read actions, but can induce a lag.\r\nMinimum value is 1 second.",
+		"group": "File Settings"
+	},
+	"FileMode": {
+		"type": "dropdown",
+		"label": "Mode",
+		"value": "AnkhBot",
+		"items": ["AnkhBot", "Spotify"],
+		"tooltip": "[AnkhBot] Use this mode when using song request and/or playing songs with AnkhBot playlist.\r\n[Spotify] Use this mode when only playing songs with Spotify client, while it is linked with AnkhBot.",		
+		"group": "File Settings"
+	}
+}

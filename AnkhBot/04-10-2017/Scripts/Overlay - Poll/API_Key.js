@@ -1,0 +1,1 @@
+﻿var API_Key = "1af6f5e2f6544f5c90c8721f886b255c";

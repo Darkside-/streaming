@@ -1,0 +1,60 @@
+#output .anim {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+#output .floatRight {
+    float: right;
+    padding-right: 10px;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#output .base {
+  /*[BAR STYLE] */
+  background: #e67e22; /* Old browsers */
+  background: -moz-linear-gradient(top, #e67e22 0%, #d35400 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e67e22 0%,#d35400 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e67e22 0%,#d35400 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67e22', endColorstr='#d35400',GradientType=0 ); /* IE6-9 */
+
+  /*[BORDER]*/
+  border: 1px solid black;
+  border-radius: 5px;
+
+  /*[TEXT]*/
+  color: white;
+  line-height: 32px;
+  width: auto;
+
+  /*[ALIGNMENT]*/
+  margin-top: 0px;
+  margin-bottom: 5px;
+  vertical-align: center;
+  padding-left: 10px;
+
+  /*[ALIGNMENT]*/
+  text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+}
+
+#output .deleteAnim {
+  animation: delanim .5s;
+  -moz-animation: delanim .5s; /* Firefox */
+  -webkit-animation: delanim .5s; /* Safari and Chrome */
+  -o-animation: delanim .5s; /* Opera */
+}
+
+@keyframes delanim {
+  100% 
+  { 
+    margin-top: -39px;
+  }
+}

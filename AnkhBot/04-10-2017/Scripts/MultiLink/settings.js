@@ -1,0 +1,1 @@
+﻿var settings = {"customMessage": "Watch everyone together here:", "modCanChangeMessage": true, "modCanChangeTimer": true, "timerLength": 10, "saveMulti": false, "commandCooldown": 10, "timerEnabled": false, "timerChatters": 10};

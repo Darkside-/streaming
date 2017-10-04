@@ -1,0 +1,21 @@
+﻿{
+	"output_file": "settings.json",
+	
+	"TweetViewer": {
+		"type": "textbox",
+		"value": "" ,
+		"label": "Tweet",
+		"tooltip": "The tweet that will be sent as soon as the stream goes live.",
+		"group": "Tweets"	
+	},
+	
+    "btnTweet": {
+        "type": "button",
+        "label": "Tweet",
+        "tooltip": "Sends the Tweet!",
+        "function": "Tweet",
+        "wsevent": "",
+        "group": "Countdown"
+    }
+
+}

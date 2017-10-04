@@ -1,0 +1,42 @@
+{
+  "output_file": "Settings/settings.json",
+  "Command": {
+    "type": "textbox",
+    "value": "!demo",
+    "label": "Currency Command",
+    "tooltip": "The command that will be responded to.",
+    "group": "Core"
+  },
+  "Style": {
+    "type": "dropdown",
+    "value": "Styles.css",
+    "items": ["Styles.css","Styles_Discord.css","Styles_StreamLabs.css","Styles_Discord.css","Styles_Twitch.css"],
+    "label": "Stylesheet",
+    "tooltip": "The message that the bot will display when the command is used.",
+    "group": "Core"
+  },
+  "MaxVisible": {
+    "type": "slider",
+    "value": 4,
+    "min": 1,
+    "max": 10,
+    "ticks": 1,
+    "label": "Max Visible Uses",
+    "tooltip": "The message that the bot will display when the command is used.",
+    "group": "Core"
+  },
+  "Enabled": {
+    "type": "checkbox",
+    "value": false,
+    "label": "Enabled",
+    "tooltip": "Determines if the Overlay picks up new uses of the command.",
+    "group": "Core"
+  },
+  "RainbowMode": {
+    "type": "checkbox",
+    "value": false,
+    "label": "Use Rainbow Mode",
+    "tooltip": "Instead of the Stylesheet it will use Rainbow colors",
+    "group": "Core"
+  }
+}

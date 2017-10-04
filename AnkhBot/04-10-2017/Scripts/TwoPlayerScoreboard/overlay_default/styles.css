@@ -1,0 +1,170 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:700);
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {	
+	font-family: Arial;
+	font-size: 30px;
+	line-height: 1.5em;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 0 1px #000000, 0 0 2px #000000;
+}
+
+#scoreboard {
+	box-sizing: border-box;
+	height: 70px;	
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+#seperator {
+	order: 2;
+	flex: 0 0 50px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	color: #e67e22;
+	text-align: center;	
+	background-color: #1e1e1e;
+	border-radius: 0 0 3px 3px;
+	box-shadow: 0px 2px 5px #888888;
+	z-index: 10;
+}
+
+.info-container {
+	display: flex;
+	margin-bottom: 18px;
+	overflow: hidden;
+	box-shadow: 0px 2px 5px #888888;
+	white-space: nowrap;
+}
+
+#left-info-container {
+	order: 1;
+	justify-content: flex-start;	
+	margin-left: 10px;
+	border-bottom-left-radius: 4px;	
+	border-left: 3px solid #e67e22;
+	border-bottom: 3px solid #e67e22;
+}
+
+#right-info-container {
+	order: 3;
+	justify-content: flex-end;	
+	margin-right: 10px;
+	border-bottom-right-radius: 4px;
+	border-right: 3px solid #e67e22;	
+	border-bottom: 3px solid #e67e22;	
+}
+
+.name {
+	flex: 1 0 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#p1name {
+	order: 2;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#p2name {
+	order: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.score {
+	flex: 0 0 55px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#p1score {
+	order: 1;
+	background-color: rgba(255, 128, 128, 0.8);
+}
+
+#p2score {
+	order: 2;
+	background-color: rgba(0, 128, 255, 0.8);
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.animSlideInDown { 
+  animation: SlideInDown 1s ease-out both; 
+}
+
+@keyframes SlideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animSlideOutUp {
+	animation: SlideOutUp 1s ease-in 2.7s both;
+}
+
+@keyframes SlideOutUp {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+
+	to {
+		visibility: hidden;
+		transform: translate3d(0, -100%, 0);
+	}
+}
+
+.animExpand {
+	animation: Expand 2.5s ease-out 1.2s both;
+}
+
+@keyframes Expand {
+	from { 
+		transform: translate3d(0, -100%, 0);
+		width: 0px;
+		visibility: visible;
+	}
+	
+	5%, 15% {
+		transform: translate3d(0, 0, 0);
+		width: 0px;
+	}
+	
+	to {
+		width: 100%;
+	}
+}
+
+.animRetract {
+	animation: Retract 2.5s ease-in 0s both;
+}
+
+@keyframes Retract {
+	from {
+		width: 100%;
+	}
+	
+	85%, 95% {
+		width: 0px;
+		transform: translate3d(0, 0, 0);
+	}
+	
+	to {
+		width: 0px;
+		transform: translate3d(0, -100%, 0);
+		visibility: hidden;
+	}
+}

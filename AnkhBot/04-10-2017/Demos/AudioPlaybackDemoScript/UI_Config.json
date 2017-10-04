@@ -1,0 +1,19 @@
+﻿{
+	"output_file": "settings.json",
+	"BtnPlayAudio1": {
+		"type": "button",
+		"label": "Play Audio 1",
+		"tooltip": "Play demo audio file 1.",
+		"function": "PlayAudio1",
+		"wsevent": "",
+		"group": ""
+	},
+	"BtnPlayAudio2": {
+		"type": "button",
+		"label": "Play Audio 2",
+		"tooltip": "Play demo audio file 2.",
+		"function": "PlayAudio2",
+		"wsevent": "",
+		"group": ""
+	}
+}

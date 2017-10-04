@@ -1,0 +1,25 @@
+﻿{
+	"output_file": "settings.json",
+	"Command": {
+		"type": "textbox",
+		"value": "!settingsdemo",
+		"label": "Command",
+		"tooltip": "The command that will be responded to.",
+		"group": ""
+	},
+	"SomeMessage": {
+		"type": "textbox",
+		"value": "Hello! こんにちわ！",
+		"label": "Some Message",
+		"tooltip": "Some message to demonstrate settings value change from within the code.\r\nReload Scripts or restart the bot to trigger the 'save' and see it change!",
+		"group": ""
+	},
+	"BtnDefaults": {
+		"type": "button",
+		"label": "Default Settings",
+		"tooltip": "Reset settings back to defaults.\r\nReload Scripts afterwards to see the changes in the user interface!",
+		"function": "SetDefaults",
+		"wsevent": "",
+		"group": ""
+	}
+}

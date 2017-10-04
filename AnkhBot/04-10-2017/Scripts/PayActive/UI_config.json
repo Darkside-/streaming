@@ -1,0 +1,129 @@
+{
+  "output_file": "settings.json",
+  "m_command": {
+    "type": "textbox",
+    "value": "!payactive",
+	"label": "Command",
+    "tooltip": "The command for the payactive.",
+	"group": "General"
+  },
+   "m_settingsCommand": {
+    "type": "textbox",
+    "value": "!paysettings",
+	"label": "Config Command",
+    "tooltip": "The command for payactive chat-settings.",
+	"group": "General"
+  },
+  "m_maxPayout": {
+    "type": "numberbox",
+	"label": "Payactive Max:",
+    "value": 1000,
+    "tooltip": "The largest amount you can give in a payactive",
+	"group": "General"
+  },
+    "m_excludeStreamer": {
+    "type": "checkbox",
+    "value": false,
+	"label": "Exclude streamer",
+    "tooltip": "Exclude the streamer from the payactives",
+	"group": "General"
+  },
+  "m_defaultCooldown": {
+    "type": "numberbox",
+	"label": "Default Cooldown (seconds)",
+    "value": 300,
+    "tooltip": "Cooldown in seconds till a payout happens with just !payactive.",
+	"group": "!payactive"
+  },
+  "m_defaultPoints": {
+    "type": "numberbox",
+	"label": "Default amount",
+    "value": 50,
+    "tooltip": "Currency given with just !payactive.",
+	"group": "!payactive"
+  },
+    "m_notLivePayout": {
+    "type": "checkbox",
+    "value": true,
+	"label": "Do offline Payouts",
+    "tooltip": "Do offline payouts at random intervals.",
+	"group": "Offline"
+  },
+  "m_notLiveMin": {
+    "type": "numberbox",
+	"label": "Min Cooldown (seconds)",
+    "value": 3600,
+    "tooltip": "Set the minimum timeout between starts of random payouts (3600 = 1 hour).",
+	"group": "Offline"
+  },
+  "m_notLiveMax": {
+    "type": "numberbox",
+	"label": "Max Cooldown (seconds)",
+    "value": 7200,
+    "tooltip": "Set the maximum timeout between starts of random payouts (7200 = 2 hours).",
+	"group": "Offline"
+  },
+  "m_notLivePoints": {
+    "type": "numberbox",
+	"label": "Points given out offline",
+    "value": 10,
+    "tooltip": "Set the amount people get during the offline random payouts.",
+	"group": "Offline"
+  },
+   "m_defaultMessage": {
+    "type": "textbox",
+    "value": "Hey there, chatters, in 5 minutes everyone who has been active in the last 15 minutes will receive {0} {1}!",
+	"label": "!payactive reply",
+    "tooltip": "The reply when you use !payactive {0} = Points given, {1} = currencyname",
+	"group": "Localization"
+  },
+   "m_secondsMessage": {
+    "type": "textbox",
+    "value": "Hey there, chatters, in {2} seconds everyone who has been active in the last 15 minutes will receive {0} {1}!",
+	"label": "!payactive seconds reply",
+    "tooltip": "The reply when you use !payactive <amount> <seconds> {0} = Points given, {1} = currencyname, {2} = seconds",
+	"group": "Localization"
+  },
+   "m_minutesMessage": {
+    "type": "textbox",
+    "value": "Hey there, chatters, in {2} minutes everyone who has been active in the last 15 minutes will receive {0} {1}!",
+	"label": "!payactive minutes reply",
+    "tooltip": "The reply when you use !payactive <amount> <minutes>m {0} = Points given, {1} = currencyname, {2} = minutes",
+	"group": "Localization"
+  },
+   "m_payMessage": {
+    "type": "textbox",
+    "value": "The following users have gotten {0} {1}: {2}.",
+	"label": "Payout reply",
+    "tooltip": "The reply when the payout happens {0} = Points given, {1} = currencyname, {2} = comma-seperated list of viewers",
+	"group": "Localization"
+  },
+   "m_manyEnd": {
+    "type": "textbox",
+    "value": "... and more then twitch can handle!",
+	"label": "Large Payout ending",
+    "tooltip": "The text-ending when the total message would be too long for twitch. It will cut off the names that are too many and replace it with this.",
+	"group": "Localization"
+  },
+   "m_overPayout": {
+    "type": "textbox",
+    "value": "{0}, I think you made a typo there, the max is {1}",
+	"label": "Over-payout warning",
+    "tooltip": "Warning displayed if someone does a payout larger then the maximum amount {0} = user {1} = Current Maximum",
+	"group": "Localization"
+  },
+   "m_noPayout": {
+    "type": "textbox",
+    "value": "Seems like there was no-one here to give these {0} {1} to, oh well, more for me!",
+	"label": "No-one to pay-out to",
+    "tooltip": "Notice when no-one was active in the time-frame {0} = Points that would have been given {1} = Currencyname",
+	"group": "Localization"
+  },
+   "m_wrongParamters": {
+    "type": "textbox",
+    "value": "{0}, I dont get what you mean with that",
+	"label": "Error message",
+    "tooltip": "When you make a mistake in the command {0} = user",
+	"group": "Localization"
+  }
+}

@@ -1,0 +1,209 @@
+﻿{
+	"output_file": "ScoreboardSettings.json",
+	"PlayerOneName": {
+		"type": "textbox",
+		"value": "Player1",
+		"label": "Player 1 Display Name",
+		"tooltip": "The display name of player 1.",
+		"group": ""	
+	},
+	"PlayerOneScore": {
+		"type": "numberbox",
+		"label": "Player 1 Score",
+		"value": 0,
+		"tooltip": "The score of player 1.",
+		"group": ""
+	},
+	"PlayerTwoName": {
+		"type": "textbox",
+		"value": "Player2",
+		"label": "Player 2 Display Name",
+		"tooltip": "The display name of player 2.",
+		"group": ""	
+	},
+	"PlayerTwoScore": {
+		"type": "numberbox",
+		"label": "Player 2 Score",
+		"value": 0,
+		"tooltip": "The score of player 2.",
+		"group": ""
+	},
+	"button_show": {
+		"type": "button",
+		"label": "Show Scoreboard",
+		"tooltip": "Show scoreboard on the overlay.",
+		"function": "ShowScoreboard",
+		"wsevent": "",
+		"group": ""
+	},
+	"button_hide": {
+		"type": "button",
+		"label": "Hide Scoreboard",
+		"tooltip": "Hide scoreboard on the overlay.",
+		"function": "HideScoreboard",
+		"wsevent": "",
+		"group": ""
+	},
+	"control_command": {
+		"type": "textbox",
+		"value": "!score",
+		"label": "Command",
+		"tooltip": "The main command to control the scoreboard. If none is given it defaults to !score.",
+		"group": "Control"	
+	},
+	"control_permission": {
+		"type": "dropdown",
+		"label": "Permission",
+		"value": "Moderator",
+		"tooltip": "Who can use the scoreboard command.",
+		"items": ["User_Specific","Moderator","Editor","Caster"],
+		"group": "Control"
+	},
+	"control_permission_info": {
+		"type": "textbox",
+		"value": "",
+		"label": "Permission Info",
+		"tooltip": "Input username when User_Specific is selected as required permission.",
+		"group": "Control"
+	},
+	"response_score_total": {
+		"type": "textbox",
+		"value": "Current score: {0} [{1}] - {2} [{3}].",
+		"label": "Total Score Response",
+		"tooltip": "The message the bot will announce when using:\r\n!score.\r\n\r\n{0} is player 1 name\r\n{1} is player 1 score\r\n{2} is player 2 name\r\n{3} is player 2 score.",
+		"group": "Chat Responses"
+	},
+	"response_score_player": {
+		"type": "textbox",
+		"value": "{0}'s score is {1}.",
+		"label": "Player Individual Score Response",
+		"tooltip": "The message the bot will announce when using:\r\n<cmd> [p1 | p2 | <name>]\r\n\r\n{0} is player name\r\n{1} is player score.",
+		"group": "Chat Responses"
+	},
+	"response_score_update": {
+		"type": "textbox",
+		"value": "{0}'s score is updated to {1}.",
+		"label": "Score Update",
+		"tooltip": "The message the bot will announce when using:\r\n<cmd> [p1 | p2 | <name>] [+ | - | <number>]\r\n\r\n{0} is player name\r\n{1} is player score.",
+		"group": "Chat Responses"
+	},
+	"response_name_update": {
+		"type": "textbox",
+		"value": "{0}'s name is updated to {1}.",
+		"label": "Name Update",
+		"tooltip": "The message the bot will announce when using:\r\n<cmd> setname [p1 | p2] <name>\r\n\r\n{0} is either 'Player 1' or 'Player 2'\r\n{1} is that players new name.",
+		"group": "Chat Responses"
+	},
+	"response_scoreboard_show": {
+		"type": "textbox",
+		"value": "Scoreboard is now shown.",
+		"label": "Show Scoreboard Response",
+		"tooltip": "The message the bot will announce when using:\r\n<cmd> show",
+		"group": "Chat Responses"
+	},
+	"response_scoreboard_hide": {
+		"type": "textbox",
+		"value": "Scoreboard is now hidden.",
+		"label": "Hide Scoreboard Response",
+		"tooltip": "The message the bot will announce when using:\r\n<cmd> hide",
+		"group": "Chat Responses"
+	},
+	"response_score_clear": {
+		"type": "textbox",
+		"value": "Score data is cleared.",
+		"label": "Clear Score Data Response",
+		"tooltip": "The message the bot will announce when using:\r\n<cmd> clear",
+		"group": "Chat Responses"
+	},
+	"override_width": {
+		"type": "numberbox",
+		"label": "Override Scoreboard Width",
+		"value": 0,
+		"tooltip": "Overrides the automatic width to fix the size of the scoreboard regardless of name width. If set too short long names will be clipped off behind the seperator.\r\n\r\nSet to 0 to disable.",
+		"group": "Overlay Style"
+	},
+	"color_seperator": {
+		"type": "colorpicker",
+		"label": "Seperator Text Color",
+		"value": "rgba(230,126,34,1)",
+		"tooltip": "Seperator text color.",
+		"group": "Overlay Style"
+	},
+	"color_seperator_bg": {
+		"type": "colorpicker",
+		"label": "Seperator Background Color",
+		"value": "rgba(30,30,30,1)",
+		"tooltip": "Seperator background color.",
+		"group": "Overlay Style"
+	},
+	"color_p1_name": {
+		"type": "colorpicker",
+		"label": "Player 1 Name Color",
+		"value": "rgba(255,255,255,1)",
+		"tooltip": "Player 1 name text color.",
+		"group": "Overlay Style"
+	},
+	"color_p1_name_bg": {
+		"type": "colorpicker",
+		"label": "Player 1 Name Background Color",
+		"value": "rgba(0,0,0,0.59)",
+		"tooltip": "Player 1 name background color.",
+		"group": "Overlay Style"
+	},
+	"color_p1_score": {
+		"type": "colorpicker",
+		"label": "Player 1 Score Color",
+		"value": "rgba(255,255,255,1)",
+		"tooltip": "Player 1 score text color.",
+		"group": "Overlay Style"
+	},
+	"color_p1_score_bg": {
+		"type": "colorpicker",
+		"label": "Player 1 Score Background Color",
+		"value": "rgba(255,128,128,0.75)",
+		"tooltip": "Player 1 score background color.",
+		"group": "Overlay Style"
+	},	
+	"color_p2_name": {
+		"type": "colorpicker",
+		"label": "Player 2 Name Color",
+		"value": "rgba(255,255,255,1)",
+		"tooltip": "Player 2 name text color.",
+		"group": "Overlay Style"
+	},
+	"color_p2_name_bg": {
+		"type": "colorpicker",
+		"label": "Player 2 Name Background Color",
+		"value": "rgba(0,0,0,0.59)",
+		"tooltip": "Player 2 name background color.",
+		"group": "Overlay Style"
+	},
+	"color_p2_score": {
+		"type": "colorpicker",
+		"label": "Player 2 Score Color",
+		"value": "rgba(255,255,255,1)",
+		"tooltip": "Player 2 score text color.",
+		"group": "Overlay Style"
+	},
+	"color_p2_score_bg": {
+		"type": "colorpicker",
+		"label": "Player 2 Score Background Color",
+		"value": "rgba(0,128,255,0.75)",
+		"tooltip": "Player 2 score background color.",
+		"group": "Overlay Style"
+	},
+	"color_scoreboard_border": {
+		"type": "colorpicker",
+		"label": "Scoreboard Border Color",
+		"value": "rgba(230,126,34,255)",
+		"tooltip": "Scoreboard border color.",
+		"group": "Overlay Style"
+	},
+	"color_scoreboard_showborder": {
+		"type": "checkbox",
+		"value": true,
+		"label": "Show Border",
+		"tooltip": "To show or not to show the border around the scoreboard.",
+		"group": "Overlay Style"
+	}
+}

@@ -1,0 +1,10 @@
+﻿{
+	"output_file": "settings.json",
+	"City": {
+		"type": "textbox",
+		"value": "London",
+		"label": "City",
+		"tooltip": "City to get the weather for with $weather",
+		"group": ""
+	}
+}

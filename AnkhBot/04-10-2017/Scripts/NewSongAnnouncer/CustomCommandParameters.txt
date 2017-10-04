@@ -1,0 +1,11 @@
+New Song Announcer v1.3 and up supports the following two parameters that
+can be used in existing commands and expand the current available commands
+regarding song-request, previous song and requester parameters.
+
+$prevsong
+
+	- Is replaced with the previous played song title if any else it will be "None"
+
+$prevrequestedby
+
+	- Is replaced with the previous song requester if any else it will be "Nobody"

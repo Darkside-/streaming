@@ -1,0 +1,38 @@
+﻿{
+	"output_file": "settings.json",
+	"Command": {
+		"type": "textbox",
+		"value": "!putrequest",
+		"label": "Command",
+		"tooltip": "Command to execute the PUT Request",
+		"group": ""
+	},
+	"Status": {
+		"type": "textbox",
+		"value": "New title set by API with AnkhBot Scripting",
+		"label": "Twitch Status/Title",
+		"tooltip": "New Status/Title to be set on a Twitch Channel",
+		"group": ""
+	},
+	"Game": {
+		"type": "textbox",
+		"value": "IRL",
+		"label": "Twitch Game",
+		"tooltip": "New Game to be set on a Twitch Channel",
+		"group": ""
+	},
+	"ClientId": {
+		"type": "textbox",
+		"value": "",
+		"label": "Twitch API Client ID",
+		"tooltip": "Twitch API Client ID to make API requests",
+		"group": "Twitch API Authentication"
+	},
+	"AccessToken": {
+		"type": "textbox",
+		"value": "",
+		"label": "Twitch Caster AccessToken OAuth",
+		"tooltip": "Twitch Authenticated OAuth of caster with scopes; user_read and channel_editor",
+		"group": "Twitch API Authentication"
+	}
+}
