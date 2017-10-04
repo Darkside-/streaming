@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'conv-Haettenschweiler';
+	/*src: url('../fonts/Haettenschweiler.eot');*/
+	src: local('☺'),
+    url('../fonts/Haettenschweiler-new.woff') format('woff'),
+    url('../fonts/Haettenschweiler-new.ttf') format('truetype'),
+    url('../fonts/Haettenschweiler-new.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Dense-Regular';
+	src: url('../fonts/Dense-Regular.eot');
+	src: local('☺'),
+    url('../fonts/Dense-Regular.woff') format('woff'),
+    url('../fonts/Dense-Regular.ttf') format('truetype'),
+    url('../fonts/Dense-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GoudyOldStyleT';
+	src: url('../fonts/GoudyOldStyleT.eot');
+	src: local('☺'),
+    url('../fonts/GoudyOldStyleT.woff') format('woff'),
+    url('../fonts/GoudyOldStyleT.ttf') format('truetype'),
+    url('../fonts/GoudyOldStyleT.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DIN 1451 Std Engschrift';
+	src: local('☺'),
+    url('../fonts/DIN 1451 Std Engschrift.woff') format('woff'),
+	font-weight: normal;
+	font-style: normal;
+}
